@@ -80,39 +80,5 @@ console.log("server started on port" + port)});
 
 
 
-// app.use(bodyParser.json());
-// const Item = require ("./models/item.js").Item;
-
-// var corsOptions = {
-//   origin: function (origin, callback) {
-//     if (whitelist.indexOf(origin) !== -1 || !origin) {
-//       callback(null, true)
-//     } else {
-//       callback(new Error('Not allowed by CORS'))
-//     }
-//   }
-// }
-// app.get('/items',
-//  cors(corsOptions),
-//   function (req, res, next) {
-//   res.json({msg: 'This is CORS-enabled for only example.com.'})
-// })
-// app.listen(80, function () {
-//   console.log('CORS-enabled web server listening on port 80')
-// })
-
-// // app.get("/items" , (req,res) => {
-// // Item.find({})
-// // .sort({date:-1})
-// // .then(items => res.json(items));
-// //  })
-// //  app.post("items", (req,res)=> {
-// //      const newItem = Item({image : req.body.image})
-// //      newItem.save().then(item => res.json(item));
-// //  })
-
-// app.use(cors());
-// const port = process.env.PORT || 5000;
-// app.listen(port, () => console.log('server started on port ' + port));
 
 
