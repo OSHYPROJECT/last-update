@@ -31,12 +31,13 @@ class Comments extends Component {
     var listcomments = cc.map((Reviewers) =>
       <div id = "div" >
         
-          <p >{Moment(Reviewers.time).format('dd MMM YYYY')}</p>
           <h3 id="username ">
             <img width="30px" height="30px" src={Reviewers.profilePic} /> {Reviewers.userName} </h3>
           <p >{Reviewers.comment}</p>
+          <p >{Moment(Reviewers.time).format('dd MMM YYYY')}</p>
+
    
-   
+
       </div>
     );
     return (

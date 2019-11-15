@@ -28,7 +28,7 @@ componentDidMount(){
        }
        var listUsers = users.map((userinfo,i) =>
        <div key = {i} id="box">
-        <p id= "owner">owner</p>
+        <p id= "owner">Owner</p>
         {/* <h3 font-size="10px">{userinfo.location}</h3> */}
         <h2 id = "u"> 
          <img id="pic" src = {userinfo.pp}/>

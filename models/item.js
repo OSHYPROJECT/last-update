@@ -151,15 +151,15 @@ var savingToDb = new Item({
 //     console.log("revs done")
 //     }
 //     });
-work1.save((error,result)=>{
-if(error){
-    console.log("errrrrror",error
-    )
-}
-else{
-console.log("doneeee")
-}
-});
+// work1.save((error,result)=>{
+// if(error){
+//     console.log("errrrrror",error
+//     )
+// }
+// else{
+// console.log("doneeee")
+// }
+// });
     
 
 module.exports.Items=Items;
