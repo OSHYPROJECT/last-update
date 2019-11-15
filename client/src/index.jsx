@@ -5,6 +5,7 @@ import App from "./components/y.jsx";
 import Users from "./components/o.jsx";
 import Comments from './components/s.jsx';
 import Other from './components/h.jsx';
+import Work from './components/worksUser.jsx';
 class Main extends Component {
    constructor(props){
        super(props)
@@ -12,9 +13,11 @@ class Main extends Component {
    render(){
        return (
            <div>
-               <NavBar />
+               <Work/>
                <App />
+               <br></br>
                <Other />
+               <br></br>
                <Users />
                <Comments />
            </div>
