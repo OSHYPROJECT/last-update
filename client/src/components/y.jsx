@@ -35,7 +35,7 @@ componentDidMount(){
     render(){
         const listItems = this.state.data.map((img) =>
         <li>
-        <img src={img.url}></img>
+        <img class="center" src={img.url}></img>
         <p >{img.imgInfo}</p>
         </li>
       );

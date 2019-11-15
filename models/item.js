@@ -18,7 +18,8 @@ const Items =  new Schema ({
 
 const userinfo= new Schema({
     name : String,
-    location : String
+    location : String,
+    pp: String
 })
 
 
@@ -63,8 +64,9 @@ const img1 =  new Imgs ({
 });
 
 const userinfo1 = new  Userinfo({
-    name: "oladog",
-    location : "Jordan"
+    name: "ola",
+    location : "Jordan",
+    pp: "omg"
 })
 
 const  reviewers1 = new  rev({
