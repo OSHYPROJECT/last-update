@@ -34,14 +34,13 @@ const Reviewers =  new Schema ({
     comment:String
 });
 const img =  new Schema ({
-   
+    projectid:Number,
     itemid:Number,
     url:String,
     imgInfo:String
 });
 
 const others =  new Schema ({
-   
     itemid:Number,
     ip:String,
     projectName:String
@@ -69,6 +68,7 @@ const others1 =  new Others ({
 
 const img1 =  new Imgs ({
 
+    projectid:1,
     itemid:1,
     url:"anuthing",
     imgInfo:"hhh"

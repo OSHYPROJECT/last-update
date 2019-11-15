@@ -15,8 +15,9 @@ class App extends Component  {
    
 componentDidMount(){
     var that = this;
+    var id = window.location.href.split('=')[1];
     $.ajax({
-        url:"/imgs",
+        url:"/imgs/"+id,
         type:"GET",
         dataType:"json",
         success:function(data){
@@ -34,8 +35,8 @@ componentDidMount(){
     render(){
         const listItems = this.state.data.map((img) =>
         <li>
-        <img class="center" src={img.url}></img>
-        <p  class="info">{img.imgInfo}</p>
+        <img className="list" src={img.url}></img>
+        <p  className="font" >{img.imgInfo}</p>
         </li>
       );
         return (

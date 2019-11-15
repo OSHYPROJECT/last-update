@@ -27,13 +27,15 @@ componentDidMount(){
            users =this.state.data;
        }
        var listUsers = users.map((userinfo) =>
-       <div id="user">
-        <h4 id= "owner">owner</h4>
+       <div id="box">
+        <p id= "owner">owner</p>
+        {/* <h3 font-size="10px">{userinfo.location}</h3> */}
         <h2 id = "u"> 
-         <img id= "pic" src = {userinfo.pp}/>
+         <img id="pic" src = {userinfo.pp}/>
           {userinfo.name}
+          <br></br>
+          <p>{userinfo.location}</p>
           </h2>
-          <h3 font-size="10px">{userinfo.location}</h3>
           </div>
      );
        return (

@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./styles.css"/>
-
-   <meta charset="utf-8">
-   <title>HOSY</title>
+  <meta charset="utf-8">
+  <title>HOSY</title>
+  <link rel= "stylesheet" type = "text/css" href = "all.css">
 </head>
 <body>
 <div id="root">
 </div>
-<div> 
-  <ul>
-    <li><a href="#home">Behance</a></li>
-    <li><a href="#news">Sign In</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li style="float:right"><a class="active" href="#about">About</a></li>
-  </ul>
-</div>
+<div>
+ <ul id="bar" class="Bar">
+   <li><a href="#home">Behance</a></li>
+   <li><a href="#news">Sign In</a></li>
+   <li><a href="#contact">Contact</a></li>
+   <li style="float:right"><a class="active" href="#about">About</a></li>
+ </ul>
+</div
+.>
 <style>
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  opacity: .8;
-  filter: alpha(opacity=60);
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #333;
 }
-
 li {
-  float: left;
+ float: left;
 }
-
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
 }
-
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
-  
+ background-color: #111;
 }
 </style>
 <div id="app"></div>
 <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+ src="https://code.jquery.com/jquery-3.4.1.min.js"
+ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
 <script type="text/babel">
 </script>
 <script  type="text/javascript" src="bundle.js"></script>
-
-
-
 </body>
-
 </html>

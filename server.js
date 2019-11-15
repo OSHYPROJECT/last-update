@@ -24,12 +24,14 @@ const Imgs = require("./models/item.js").Imgs;
 const rev = require("./models/item.js").rev;
 const userinfo = require("./models/item.js").Userinfo;
 const others = require("./models/item.js").Others;
+const Work = require("./models/item.js").Work;
 
 
 
 
-app.get("/imgs", (req, res) => {
- Imgs.find()
+
+app.get("/imgs/:id", (req, res) => {
+ Imgs.find({projectid:req.params.id})
     .then(Imgs => res.json(Imgs));
 })
 app.get("/relate", (req, res) => {
@@ -44,12 +46,12 @@ app.get("/relate", (req, res) => {
    })
 
 app.get("/userinfo", (req, res) => {
-    userinfo.find()
+    userinfo.find({})
        .then(Userinfo => res.json(Userinfo));
    })
    app.get("/information", (req, res) => {
-    Work.find()
-       .then(Work => res.json(Work));
+    Work.find({}).limit(1)
+       .then(Work =>{ console.log("wwwwwww",Work);res.json(Work)});
    })
 
    app.get("/Reviewers", (req, res) => {
