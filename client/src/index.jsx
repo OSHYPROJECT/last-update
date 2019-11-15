@@ -5,6 +5,8 @@ import App from "./components/y.jsx";
 import Users from "./components/o.jsx";
 import Comments from './components/s.jsx';
 import Other from './components/h.jsx';
+import Work from './components/worksUser.jsx';
+
 
 
 
@@ -18,10 +20,13 @@ class Main extends Component {
     render(){
         return (
             <div>
-     
-                <App />
-                <Other />
+                <div  className = 'app'>
+                     <App />
+                </div>
+                
+                <Other className = 'other' />
                 <Users />
+                <Work />
                 <Comments />
             </div>
         )

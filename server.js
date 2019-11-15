@@ -29,15 +29,11 @@ const others = require("./models/item.js").Others;
 
 
 app.get("/imgs", (req, res) => {
- // res.send("Home Page")
  Imgs.find()
     .then(Imgs => res.json(Imgs));
 })
 app.get("/relate", (req, res) => {
     console.log("relate server", req.body);       
-    // res.send("Home Page")
-    //var relate = req.body;
-    // res.send("ddd")
     others.find({},(err,data)=>{
         console.log(data)
         res.send(data)
@@ -48,14 +44,16 @@ app.get("/relate", (req, res) => {
    })
 
 app.get("/userinfo", (req, res) => {
-    // res.send("Home Page")
     userinfo.find()
        .then(Userinfo => res.json(Userinfo));
+   })
+   app.get("/information", (req, res) => {
+    Work.find()
+       .then(Work => res.json(Work));
    })
 
    app.get("/Reviewers", (req, res) => {
 console.log("he.....")
-    // res.send("Home Page")
     rev.find({})
        .then(Userinfo =>{ 
            console.log("fffffff",Userinfo)

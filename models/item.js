@@ -21,7 +21,11 @@ const userinfo= new Schema({
     location : String,
     pp: String
 })
-
+const work= new Schema({
+    name1 : String,
+    location1 : String,
+    pic:String
+})
 
 const Reviewers =  new Schema ({
     profilePic: String,
@@ -48,7 +52,14 @@ const Imgs = mongoose.model("img", img);
 const Others = mongoose.model("others", others);
 const rev = mongoose.model("reviewers", Reviewers);
 const Userinfo = mongoose.model("userinfo", userinfo);
+const Work = mongoose.model("work", work);
 
+
+const work1= new Work({
+    name1 : "String",
+    location1 : "String",
+    pic:"String"
+})
 const others1 =  new Others ({
    
     itemid:1,
@@ -140,6 +151,15 @@ var savingToDb = new Item({
 //     console.log("revs done")
 //     }
 //     });
+// work1.save((error,result)=>{
+// if(error){
+//     console.log("errrrrror",error
+//     )
+// }
+// else{
+// console.log("doneeee")
+// }
+// });
     
 
 module.exports.Items=Items;
@@ -147,3 +167,5 @@ module.exports.Imgs=Imgs;
 module.exports.Userinfo=Userinfo;
 module.exports.rev=rev;
 module.exports.Others=Others;
+module.exports.Work=Work;
+

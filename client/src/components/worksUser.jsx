@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class Users extends Component  {
+class Work extends Component  {
    constructor(props){
        super(props)
       this.state = {
@@ -9,7 +9,7 @@ class Users extends Component  {
 componentDidMount(){
    var that = this;
    $.ajax({
-       url:"/userinfo",
+       url:"/information",
        type:"GET",
        success:function(data){
          console.log(data);
@@ -22,25 +22,22 @@ componentDidMount(){
      });
    }
    render(){
-       var users = [];
+       var info = [];
        if(Array.isArray(this.state.data)){
-           users =this.state.data;
+        info =this.state.data;
        }
-       var listUsers = users.map((userinfo) =>
-       <div id="user">
-        <h4 id= "owner">owner</h4>
-        <h2 id = "u"> 
-         <img id= "pic" src = {userinfo.pp}/>
-          {userinfo.name}
-          </h2>
-          <h3 font-size="10px">{userinfo.location}</h3>
+       var listWorks= info.map((work) =>
+       <div>
+           <p>{work.name1}</p>
+           <p>{work.location1}</p>
+        <img src = {work.pic}/>
           </div>
      );
        return (
-           <div   > {listUsers} </div>
+           <div> {listWorks} </div>
               
           
        )
    }
 }
-export default Users;
+export default Work;
