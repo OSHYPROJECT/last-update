@@ -8,8 +8,8 @@ class NavBar extends Component {
    }
    render() {
      return (
-       <div id="title">
-           <h1 className="name"> My project...Enjoy </h1>
+       <div  className="navbar" id="title">
+           <p id="like"> <img src="ola.png " width="50px" height="50px" /></p>
        </div>
      );
    }

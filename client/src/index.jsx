@@ -15,7 +15,7 @@ class Main extends Component {
            <div>
                <Work/>
                <App />
-               <br></br>
+               <NavBar/>
                <Other />
                <br></br>
                <Users />

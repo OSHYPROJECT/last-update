@@ -27,8 +27,8 @@ componentDidMount(){
         info =this.state.data;
        }
        var listWorks= info.map((work) =>
-       <div  id="box2">
-        <p><img  width= "35px" height="35px"/> {work.name1}</p>
+       <div className="Fo" id="box2">
+        <p><img src = {work.pic} id="image"  width= "35px" height="35px"/> {work.name1} </p>
         <p>{work.location1}</p>
         </div>
      );

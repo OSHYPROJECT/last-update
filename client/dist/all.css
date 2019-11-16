@@ -8,11 +8,11 @@
 }
 #box2{
   border-style: solid;
-  border-width: 1px;
+  border-width: .5px;
   border-style: solid;
-  border-width: 1px;
+  border-width: .5px;
   padding: 15px;
-  background-color:bisque;
+  background-color: black;
 
 
 
@@ -46,6 +46,16 @@
     width: 40%;
 
   }
+  #like{
+    background-color: black;
+    text-align: center;
+
+
+  }
+  .navbar{
+    background-color: black ;
+
+  }
 
   #img{
    border-radius: 100px;
@@ -67,6 +77,7 @@
    display: block;
    width: 100%;
    height: auto;
+   font:white;
  }
  .overlay {
    border-radius: 50px;
@@ -114,6 +125,13 @@
    font-style: normal;
    font-size: 20px;
  }
+ .Fo
+ {
+   font-weight: bold;
+   color: white;
+   font-style: normal;
+   font-size: 20px;
+ }
  #bar {
    font-weight: normal;
    font-size: 25px;
@@ -126,7 +144,7 @@
  }
  #title
  {
-     background-color: #333;
+     background-color:black;
      height: 50px;
      width: auto;
  }
