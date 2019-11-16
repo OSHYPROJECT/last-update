@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from "./components/navBAr.jsx";
+// import NavBar from "./components/navBAr.jsx";
 import App from "./components/y.jsx";
 import Users from "./components/o.jsx";
 import Comments from './components/s.jsx';
@@ -15,7 +15,7 @@ class Main extends Component {
            <div>
                <Work/>
                <App />
-               <NavBar/>
+               {/* <NavBar/> */}
                <Other />
                <br></br>
                <Users />

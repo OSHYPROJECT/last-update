@@ -9,7 +9,8 @@ class NavBar extends Component {
    render() {
      return (
        <div  className="navbar" id="title">
-           <p id="like"> <img src="ola.png " width="50px" height="50px" /></p>
+           <p id="like"> <img src="ola.png " width="50px" height="30px" /></p>
+           <p>Moss Packaging -limited edition on exhibition</p>
        </div>
      );
    }
